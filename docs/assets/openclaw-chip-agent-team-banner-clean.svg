@@ -45,19 +45,8 @@
     <tspan x="486" dy="68">Chip Collaboration</tspan>
   </text>
 
-  <text x="486" y="372" fill="#D4E1EE" font-size="23" font-weight="500" font-family="Arial, PingFang SC, sans-serif">
+  <text x="486" y="392" fill="#D4E1EE" font-size="23" font-weight="500" font-family="Arial, PingFang SC, sans-serif">
     <tspan x="486" dy="0">角色化架构评审、实现判断、验证闭环与签核协作</tspan>
     <tspan x="486" dy="34">Architect / PM / RTL / DV / STA / PD / DFT / Analog / Layout</tspan>
   </text>
-
-  <g transform="translate(486 432)">
-    <rect x="0" y="0" width="170" height="44" rx="22" fill="#14354A" stroke="#316784"/>
-    <text x="26" y="29" fill="#F2FAFF" font-size="19" font-weight="600" font-family="Arial, PingFang SC, sans-serif">Architect-led</text>
-
-    <rect x="186" y="0" width="158" height="44" rx="22" fill="#14403D" stroke="#249388"/>
-    <text x="216" y="29" fill="#F2FAFF" font-size="19" font-weight="600" font-family="Arial, PingFang SC, sans-serif">Chinese-first</text>
-
-    <rect x="360" y="0" width="206" height="44" rx="22" fill="#2A2E48" stroke="#6970B7"/>
-    <text x="389" y="29" fill="#F2FAFF" font-size="19" font-weight="600" font-family="Arial, PingFang SC, sans-serif">Reusable templates</text>
-  </g>
 </svg>
