@@ -21,11 +21,11 @@
   <rect x="96" y="116" width="1088" height="408" rx="28" fill="#0C1827" opacity="0.88" stroke="#27445F"/>
 
   <g opacity="0.55">
-    <path d="M500 180H790" stroke="#254764" stroke-width="2" stroke-linecap="round"/>
-    <path d="M500 220H770" stroke="#254764" stroke-width="2" stroke-linecap="round"/>
-    <path d="M500 260H810" stroke="#254764" stroke-width="2" stroke-linecap="round"/>
-    <path d="M500 300H760" stroke="#254764" stroke-width="2" stroke-linecap="round"/>
-    <path d="M500 340H785" stroke="#254764" stroke-width="2" stroke-linecap="round"/>
+    <path d="M500 180H730" stroke="#254764" stroke-width="2" stroke-linecap="round"/>
+    <path d="M500 220H710" stroke="#254764" stroke-width="2" stroke-linecap="round"/>
+    <path d="M500 260H750" stroke="#254764" stroke-width="2" stroke-linecap="round"/>
+    <path d="M500 300H700" stroke="#254764" stroke-width="2" stroke-linecap="round"/>
+    <path d="M500 340H725" stroke="#254764" stroke-width="2" stroke-linecap="round"/>
   </g>
 
   <g transform="translate(150 170)">
@@ -55,9 +55,10 @@
     Team for Real Chip Collaboration
   </text>
 
-  <text x="476" y="320" fill="#D4E1EE" font-size="26" font-weight="500" font-family="Arial, PingFang SC, sans-serif">
-    <tspan x="476" dy="0">角色化架构评审、实现判断、验证闭环与签核协作</tspan>
-    <tspan x="476" dy="38">Architect / PM / RTL / DV / STA / PD / DFT / Analog / Layout</tspan>
+  <text x="476" y="320" fill="#D4E1EE" font-size="24" font-weight="500" font-family="Arial, PingFang SC, sans-serif">
+    <tspan x="476" dy="0">角色化架构评审、实现判断、验证闭环</tspan>
+    <tspan x="476" dy="36">与签核协作</tspan>
+    <tspan x="476" dy="36">Architect / PM / RTL / DV / STA / PD / DFT / Analog / Layout</tspan>
   </text>
 
   <g transform="translate(476 404)">
@@ -71,27 +72,28 @@
     <text x="389" y="29" fill="#F2FAFF" font-size="19" font-weight="600" font-family="Arial, PingFang SC, sans-serif">Reusable templates</text>
   </g>
 
-  <g transform="translate(838 148)">
-    <rect x="0" y="0" width="296" height="316" rx="24" fill="url(#card)" stroke="#2A516F"/>
+  <g transform="translate(900 150)">
+    <rect x="0" y="0" width="240" height="306" rx="24" fill="url(#card)" stroke="#2A516F"/>
     <text x="28" y="46" fill="#F6FBFF" font-size="24" font-weight="700" font-family="Arial, PingFang SC, sans-serif">Role Mesh</text>
-    <text x="28" y="82" fill="#AEC6DA" font-size="18" font-weight="500" font-family="Arial, PingFang SC, sans-serif">
+    <text x="28" y="82" fill="#AEC6DA" font-size="16" font-weight="500" font-family="Arial, PingFang SC, sans-serif">
       <tspan x="28" dy="0">PM 定义边界，Architect 做 gate，</tspan>
-      <tspan x="28" dy="28">specialist 从实现与 signoff 约束结论。</tspan>
+      <tspan x="28" dy="24">specialist 从实现与 signoff</tspan>
+      <tspan x="28" dy="24">约束结论。</tspan>
     </text>
 
-    <circle cx="52" cy="138" r="9" fill="#7EEBFF"/>
-    <text x="76" y="144" fill="#F2FAFF" font-size="18" font-weight="600" font-family="Arial, PingFang SC, sans-serif">Chip PM</text>
+    <circle cx="48" cy="150" r="8" fill="#7EEBFF"/>
+    <text x="68" y="155" fill="#F2FAFF" font-size="17" font-weight="600" font-family="Arial, PingFang SC, sans-serif">Chip PM</text>
 
-    <circle cx="52" cy="178" r="9" fill="#37D1AB"/>
-    <text x="76" y="184" fill="#F2FAFF" font-size="18" font-weight="600" font-family="Arial, PingFang SC, sans-serif">Architect</text>
+    <circle cx="48" cy="186" r="8" fill="#37D1AB"/>
+    <text x="68" y="191" fill="#F2FAFF" font-size="17" font-weight="600" font-family="Arial, PingFang SC, sans-serif">Architect</text>
 
-    <circle cx="52" cy="218" r="9" fill="#FFB460"/>
-    <text x="76" y="224" fill="#F2FAFF" font-size="18" font-weight="600" font-family="Arial, PingFang SC, sans-serif">RTL / DV / DFT</text>
+    <circle cx="48" cy="222" r="8" fill="#FFB460"/>
+    <text x="68" y="227" fill="#F2FAFF" font-size="17" font-weight="600" font-family="Arial, PingFang SC, sans-serif">RTL / DV / DFT</text>
 
-    <circle cx="52" cy="258" r="9" fill="#C98CFF"/>
-    <text x="76" y="264" fill="#F2FAFF" font-size="18" font-weight="600" font-family="Arial, PingFang SC, sans-serif">PD / STA</text>
+    <circle cx="48" cy="258" r="8" fill="#C98CFF"/>
+    <text x="68" y="263" fill="#F2FAFF" font-size="17" font-weight="600" font-family="Arial, PingFang SC, sans-serif">PD / STA</text>
 
-    <circle cx="52" cy="298" r="9" fill="#FF8EA2"/>
-    <text x="76" y="304" fill="#F2FAFF" font-size="18" font-weight="600" font-family="Arial, PingFang SC, sans-serif">Analog / Layout</text>
+    <circle cx="48" cy="294" r="8" fill="#FF8EA2"/>
+    <text x="68" y="299" fill="#F2FAFF" font-size="17" font-weight="600" font-family="Arial, PingFang SC, sans-serif">Analog / Layout</text>
   </g>
 </svg>
