@@ -2,7 +2,7 @@
 
 [English](README.md) | [简体中文](README.zh-CN.md)
 
-![OpenClaw Chip Agent Team Banner](docs/assets/openclaw-chip-agent-team-banner.svg)
+![OpenClaw Chip Agent Team Banner](docs/assets/openclaw-chip-agent-team-banner-clean.svg)
 
 这是一个面向 OpenClaw 的开源芯片 / SoC 多智能体团队模板仓库。
 

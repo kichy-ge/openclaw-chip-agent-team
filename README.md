@@ -2,7 +2,7 @@
 
 [English](README.md) | [简体中文](README.zh-CN.md)
 
-![OpenClaw Chip Agent Team Banner](docs/assets/openclaw-chip-agent-team-banner.svg)
+![OpenClaw Chip Agent Team Banner](docs/assets/openclaw-chip-agent-team-banner-clean.svg)
 
 Open-source role templates for building a serious chip and SoC multi-agent team in OpenClaw.
 
