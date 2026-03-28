@@ -1,68 +1,69 @@
 <svg width="1280" height="640" viewBox="0 0 1280 640" xmlns="http://www.w3.org/2000/svg">
   <defs>
     <linearGradient id="bg" x1="80" y1="60" x2="1200" y2="600" gradientUnits="userSpaceOnUse">
-      <stop offset="0" stop-color="#0A1220"/>
+      <stop offset="0" stop-color="#08111E"/>
       <stop offset="0.55" stop-color="#10253B"/>
       <stop offset="1" stop-color="#17334C"/>
     </linearGradient>
-    <linearGradient id="chip" x1="150" y1="150" x2="410" y2="410" gradientUnits="userSpaceOnUse">
-      <stop offset="0" stop-color="#20D1B8"/>
-      <stop offset="1" stop-color="#1085A1"/>
-    </linearGradient>
-    <linearGradient id="card" x1="835" y1="148" x2="1125" y2="472" gradientUnits="userSpaceOnUse">
-      <stop offset="0" stop-color="#12283F"/>
-      <stop offset="1" stop-color="#193851"/>
+    <linearGradient id="chip" x1="150" y1="170" x2="410" y2="430" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#68C7B7"/>
+      <stop offset="1" stop-color="#58AEB7"/>
     </linearGradient>
   </defs>
 
   <rect x="0" y="0" width="1280" height="640" rx="32" fill="url(#bg)"/>
-  <circle cx="1095" cy="110" r="170" fill="#1F4B65" opacity="0.18"/>
-  <circle cx="175" cy="560" r="210" fill="#0C8E91" opacity="0.12"/>
-  <rect x="96" y="116" width="1088" height="408" rx="28" fill="#0C1827" opacity="0.88" stroke="#27445F"/>
+  <circle cx="1110" cy="106" r="170" fill="#274C67" opacity="0.18"/>
+  <circle cx="158" cy="560" r="210" fill="#0E8A8D" opacity="0.12"/>
 
-  <g opacity="0.55">
-    <path d="M500 180H730" stroke="#254764" stroke-width="2" stroke-linecap="round"/>
-    <path d="M500 220H710" stroke="#254764" stroke-width="2" stroke-linecap="round"/>
-    <path d="M500 260H750" stroke="#254764" stroke-width="2" stroke-linecap="round"/>
-    <path d="M500 300H700" stroke="#254764" stroke-width="2" stroke-linecap="round"/>
-    <path d="M500 340H725" stroke="#254764" stroke-width="2" stroke-linecap="round"/>
+  <rect x="96" y="118" width="1088" height="408" rx="30" fill="#091726" opacity="0.9" stroke="#27445F"/>
+  <rect x="112" y="410" width="1056" height="96" rx="22" fill="#0D2032" opacity="0.92" stroke="#244560"/>
+
+  <g opacity="0.4">
+    <path d="M486 196H900" stroke="#234560" stroke-width="2" stroke-linecap="round"/>
+    <path d="M486 232H820" stroke="#234560" stroke-width="2" stroke-linecap="round"/>
+    <path d="M486 268H860" stroke="#234560" stroke-width="2" stroke-linecap="round"/>
+    <path d="M486 304H792" stroke="#234560" stroke-width="2" stroke-linecap="round"/>
   </g>
 
-  <g transform="translate(150 170)">
-    <rect x="0" y="0" width="260" height="260" rx="40" fill="url(#chip)"/>
-    <rect x="48" y="48" width="164" height="164" rx="26" fill="#E8FBFF" opacity="0.16" stroke="#BFFFFB" stroke-width="2"/>
-    <rect x="86" y="86" width="88" height="88" rx="18" fill="#09141F"/>
-    <circle cx="130" cy="130" r="20" fill="#67E8FF"/>
-    <path d="M40 88H0" stroke="#76FFF5" stroke-width="10" stroke-linecap="round"/>
-    <path d="M40 130H0" stroke="#76FFF5" stroke-width="10" stroke-linecap="round"/>
-    <path d="M40 172H0" stroke="#76FFF5" stroke-width="10" stroke-linecap="round"/>
-    <path d="M260 88H220" stroke="#76FFF5" stroke-width="10" stroke-linecap="round"/>
-    <path d="M260 130H220" stroke="#76FFF5" stroke-width="10" stroke-linecap="round"/>
-    <path d="M260 172H220" stroke="#76FFF5" stroke-width="10" stroke-linecap="round"/>
-    <path d="M88 40V0" stroke="#76FFF5" stroke-width="10" stroke-linecap="round"/>
-    <path d="M130 40V0" stroke="#76FFF5" stroke-width="10" stroke-linecap="round"/>
-    <path d="M172 40V0" stroke="#76FFF5" stroke-width="10" stroke-linecap="round"/>
-    <path d="M88 260V220" stroke="#76FFF5" stroke-width="10" stroke-linecap="round"/>
-    <path d="M130 260V220" stroke="#76FFF5" stroke-width="10" stroke-linecap="round"/>
-    <path d="M172 260V220" stroke="#76FFF5" stroke-width="10" stroke-linecap="round"/>
+  <g transform="translate(146 174)">
+    <rect x="0" y="0" width="284" height="284" rx="46" fill="url(#chip)"/>
+    <rect x="52" y="52" width="180" height="180" rx="30" fill="#C9FFF9" opacity="0.13" stroke="#B7FFF9" stroke-width="2"/>
+    <rect x="96" y="96" width="92" height="92" rx="20" fill="#08131E"/>
+    <circle cx="142" cy="142" r="22" fill="#87E2FF"/>
+    <path d="M36 92H0" stroke="#A5FFF8" stroke-width="10" stroke-linecap="round"/>
+    <path d="M36 142H0" stroke="#A5FFF8" stroke-width="10" stroke-linecap="round"/>
+    <path d="M36 192H0" stroke="#A5FFF8" stroke-width="10" stroke-linecap="round"/>
+    <path d="M284 92H248" stroke="#A5FFF8" stroke-width="10" stroke-linecap="round"/>
+    <path d="M284 142H248" stroke="#A5FFF8" stroke-width="10" stroke-linecap="round"/>
+    <path d="M284 192H248" stroke="#A5FFF8" stroke-width="10" stroke-linecap="round"/>
+    <path d="M92 36V0" stroke="#A5FFF8" stroke-width="10" stroke-linecap="round"/>
+    <path d="M142 36V0" stroke="#A5FFF8" stroke-width="10" stroke-linecap="round"/>
+    <path d="M192 36V0" stroke="#A5FFF8" stroke-width="10" stroke-linecap="round"/>
+    <path d="M92 284V248" stroke="#A5FFF8" stroke-width="10" stroke-linecap="round"/>
+    <path d="M142 284V248" stroke="#A5FFF8" stroke-width="10" stroke-linecap="round"/>
+    <path d="M192 284V248" stroke="#A5FFF8" stroke-width="10" stroke-linecap="round"/>
   </g>
 
-  <text x="476" y="190" fill="#7EEBFF" font-size="18" font-weight="700" letter-spacing="3" font-family="Arial, PingFang SC, sans-serif">
+  <text x="486" y="198" fill="#8AE8FF" font-size="18" font-weight="700" letter-spacing="3" font-family="Arial, PingFang SC, sans-serif">
     OPENCLAW CHIP MULTI-AGENT TEAM
   </text>
 
-  <text x="476" y="248" fill="#F5FBFF" font-size="58" font-weight="700" font-family="Arial, PingFang SC, sans-serif">
-    <tspan x="476" dy="0">Team for Real</tspan>
-    <tspan x="476" dy="68">Chip Collaboration</tspan>
+  <text x="486" y="274" fill="#F5FBFF" font-size="58" font-weight="700" font-family="Arial, PingFang SC, sans-serif">
+    <tspan x="486" dy="0">Team for Real</tspan>
+    <tspan x="486" dy="68">Chip Collaboration</tspan>
   </text>
 
-  <text x="476" y="372" fill="#D4E1EE" font-size="23" font-weight="500" font-family="Arial, PingFang SC, sans-serif">
-    <tspan x="476" dy="0">角色化架构评审、实现判断、验证闭环</tspan>
-    <tspan x="476" dy="34">与签核协作</tspan>
-    <tspan x="476" dy="34">Architect / PM / RTL / DV / STA / PD / DFT / Analog / Layout</tspan>
+  <text x="486" y="372" fill="#D4E1EE" font-size="23" font-weight="500" font-family="Arial, PingFang SC, sans-serif">
+    <tspan x="486" dy="0">角色化架构评审、实现判断、验证闭环与签核协作</tspan>
+    <tspan x="486" dy="34">Architect / PM / RTL / DV / STA / PD / DFT / Analog / Layout</tspan>
   </text>
 
-  <g transform="translate(476 444)">
+  <g transform="translate(486 314)">
+    <line x1="0" y1="0" x2="246" y2="0" stroke="#28506C" stroke-width="3" stroke-linecap="round"/>
+    <line x1="0" y1="72" x2="278" y2="72" stroke="#28506C" stroke-width="3" stroke-linecap="round"/>
+  </g>
+
+  <g transform="translate(486 430)">
     <rect x="0" y="0" width="170" height="44" rx="22" fill="#14354A" stroke="#316784"/>
     <text x="26" y="29" fill="#F2FAFF" font-size="19" font-weight="600" font-family="Arial, PingFang SC, sans-serif">Architect-led</text>
 
@@ -73,28 +74,23 @@
     <text x="389" y="29" fill="#F2FAFF" font-size="19" font-weight="600" font-family="Arial, PingFang SC, sans-serif">Reusable templates</text>
   </g>
 
-  <g transform="translate(930 190)">
-    <rect x="0" y="0" width="210" height="266" rx="24" fill="url(#card)" stroke="#2A516F"/>
-    <text x="28" y="46" fill="#F6FBFF" font-size="24" font-weight="700" font-family="Arial, PingFang SC, sans-serif">Role Mesh</text>
-    <text x="28" y="82" fill="#AEC6DA" font-size="15" font-weight="500" font-family="Arial, PingFang SC, sans-serif">
-      <tspan x="28" dy="0">PM 定义边界，Architect</tspan>
-      <tspan x="28" dy="22">做 gate，specialist</tspan>
-      <tspan x="28" dy="22">约束实现与 signoff。</tspan>
-    </text>
+  <text x="140" y="452" fill="#F4FAFF" font-size="24" font-weight="700" font-family="Arial, PingFang SC, sans-serif">Role Mesh</text>
+  <text x="140" y="482" fill="#AFC7DA" font-size="16" font-weight="500" font-family="Arial, PingFang SC, sans-serif">
+    PM 定义边界，Architect 做 gate，specialist 约束实现与 signoff。
+  </text>
 
-    <circle cx="46" cy="138" r="8" fill="#7EEBFF"/>
-    <text x="64" y="143" fill="#F2FAFF" font-size="16" font-weight="600" font-family="Arial, PingFang SC, sans-serif">Chip PM</text>
+  <circle cx="418" cy="446" r="10" fill="#88E9FF"/>
+  <text x="438" y="452" fill="#F2FAFF" font-size="17" font-weight="600" font-family="Arial, PingFang SC, sans-serif">Chip PM</text>
 
-    <circle cx="46" cy="170" r="8" fill="#37D1AB"/>
-    <text x="64" y="175" fill="#F2FAFF" font-size="16" font-weight="600" font-family="Arial, PingFang SC, sans-serif">Architect</text>
+  <circle cx="548" cy="446" r="10" fill="#69D3AE"/>
+  <text x="568" y="452" fill="#F2FAFF" font-size="17" font-weight="600" font-family="Arial, PingFang SC, sans-serif">Architect</text>
 
-    <circle cx="46" cy="202" r="8" fill="#FFB460"/>
-    <text x="64" y="207" fill="#F2FAFF" font-size="16" font-weight="600" font-family="Arial, PingFang SC, sans-serif">RTL / DV / DFT</text>
+  <circle cx="702" cy="446" r="10" fill="#F7BE6A"/>
+  <text x="722" y="452" fill="#F2FAFF" font-size="17" font-weight="600" font-family="Arial, PingFang SC, sans-serif">RTL / DV / DFT</text>
 
-    <circle cx="46" cy="234" r="8" fill="#C98CFF"/>
-    <text x="64" y="239" fill="#F2FAFF" font-size="16" font-weight="600" font-family="Arial, PingFang SC, sans-serif">PD / STA</text>
+  <circle cx="418" cy="486" r="10" fill="#C890FF"/>
+  <text x="438" y="492" fill="#F2FAFF" font-size="17" font-weight="600" font-family="Arial, PingFang SC, sans-serif">PD / STA</text>
 
-    <circle cx="46" cy="266" r="8" fill="#FF8EA2"/>
-    <text x="64" y="271" fill="#F2FAFF" font-size="16" font-weight="600" font-family="Arial, PingFang SC, sans-serif">Analog / Layout</text>
-  </g>
+  <circle cx="548" cy="486" r="10" fill="#FF93A8"/>
+  <text x="568" y="492" fill="#F2FAFF" font-size="17" font-weight="600" font-family="Arial, PingFang SC, sans-serif">Analog / Layout</text>
 </svg>
