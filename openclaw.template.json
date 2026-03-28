@@ -1,0 +1,151 @@
+{
+  "models": {
+    "mode": "merge",
+    "providers": {
+      "zhipu-ai": {
+        "baseUrl": "https://open.bigmodel.cn/api/paas/v4/",
+        "apiKey": "${ZHIPU_API_KEY}",
+        "api": "openai-completions",
+        "models": [
+          {
+            "id": "glm-5-turbo",
+            "name": "GLM-5-Turbo (Zhipu AI)",
+            "reasoning": false,
+            "input": ["text"],
+            "cost": { "input": 0, "output": 0, "cacheRead": 0, "cacheWrite": 0 },
+            "contextWindow": 32768,
+            "maxTokens": 8192
+          },
+          {
+            "id": "glm-4-air",
+            "name": "GLM-4-Air (Zhipu AI)",
+            "reasoning": false,
+            "input": ["text"],
+            "cost": { "input": 0, "output": 0, "cacheRead": 0, "cacheWrite": 0 },
+            "contextWindow": 128000,
+            "maxTokens": 4096
+          }
+        ]
+      },
+      "custom-coding-dashscope-aliyuncs-com": {
+        "baseUrl": "https://coding.dashscope.aliyuncs.com/v1",
+        "apiKey": "${DASHSCOPE_API_KEY}",
+        "api": "openai-completions",
+        "models": [
+          {
+            "id": "qwen3-coder-plus",
+            "name": "qwen3-coder-plus",
+            "reasoning": false,
+            "input": ["text"],
+            "cost": { "input": 0, "output": 0, "cacheRead": 0, "cacheWrite": 0 },
+            "contextWindow": 128000,
+            "maxTokens": 4096
+          }
+        ]
+      },
+      "custom-ark-cn-beijing-volces-com": {
+        "baseUrl": "https://ark.cn-beijing.volces.com/api/coding/v3",
+        "apiKey": "${ARK_API_KEY}",
+        "api": "openai-completions",
+        "models": [
+          {
+            "id": "doubao-seed-2.0-code",
+            "name": "doubao-seed-2.0-code",
+            "reasoning": false,
+            "input": ["text"],
+            "cost": { "input": 0, "output": 0, "cacheRead": 0, "cacheWrite": 0 },
+            "contextWindow": 128000,
+            "maxTokens": 4096
+          }
+        ]
+      }
+    }
+  },
+  "agents": {
+    "defaults": {
+      "model": {
+        "primary": "zhipu-ai/glm-5-turbo"
+      },
+      "models": {
+        "zhipu-ai/glm-5-turbo": {},
+        "zhipu-ai/glm-4-air": {},
+        "custom-coding-dashscope-aliyuncs-com/qwen3-coder-plus": {},
+        "custom-ark-cn-beijing-volces-com/doubao-seed-2.0-code": {}
+      },
+      "workspace": "__OPENCLAW_HOME__/workspace-architect",
+      "compaction": {
+        "mode": "safeguard"
+      },
+      "maxConcurrent": 1,
+      "subagents": {
+        "maxConcurrent": 3
+      }
+    },
+    "list": [
+      {
+        "id": "chip-pm",
+        "name": "Chip Product Manager",
+        "workspace": "__OPENCLAW_HOME__/workspace-chip-pm"
+      },
+      {
+        "id": "main",
+        "default": true,
+        "name": "Daily Assistant",
+        "workspace": "__OPENCLAW_HOME__/workspace-assistant"
+      },
+      {
+        "id": "architect",
+        "name": "Chip Architect",
+        "workspace": "__OPENCLAW_HOME__/workspace-architect",
+        "subagents": {
+          "allowAgents": [
+            "chip-pm",
+            "rtl",
+            "dv",
+            "dft",
+            "pd",
+            "sta",
+            "analog",
+            "custom-layout"
+          ]
+        }
+      },
+      {
+        "id": "rtl",
+        "name": "RTL Frontend Designer",
+        "workspace": "__OPENCLAW_HOME__/workspace-rtl"
+      },
+      {
+        "id": "dv",
+        "name": "Chip Verification Engineer",
+        "workspace": "__OPENCLAW_HOME__/workspace-dv"
+      },
+      {
+        "id": "dft",
+        "name": "DFT Engineer",
+        "workspace": "__OPENCLAW_HOME__/workspace-dft"
+      },
+      {
+        "id": "pd",
+        "name": "Physical Design Engineer",
+        "workspace": "__OPENCLAW_HOME__/workspace-pd"
+      },
+      {
+        "id": "sta",
+        "name": "STA Signoff Engineer",
+        "workspace": "__OPENCLAW_HOME__/workspace-sta"
+      },
+      {
+        "id": "analog",
+        "name": "Analog Designer",
+        "workspace": "__OPENCLAW_HOME__/workspace-analog"
+      },
+      {
+        "id": "custom-layout",
+        "name": "Custom Layout Engineer",
+        "workspace": "__OPENCLAW_HOME__/workspace-custom-layout"
+      }
+    ]
+  }
+}
+
