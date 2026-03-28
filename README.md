@@ -2,6 +2,13 @@
 
 Open-source role templates for building a serious chip and SoC multi-agent team in OpenClaw.
 
+Best for teams who want:
+
+- role-separated chip discussion instead of one blended AI voice
+- requirement, architecture, RTL, DV, STA, PD, DFT, analog, and layout perspectives in one workflow
+- reusable OpenClaw agent templates instead of a one-off demo
+- Chinese-first technical collaboration with explicit assumptions and ownership
+
 This repository packages a reusable collaboration structure for:
 
 - Chip Architect
@@ -15,6 +22,14 @@ This repository packages a reusable collaboration structure for:
 - Custom Layout Engineer
 
 The goal is not to ship a fake demo. The goal is to give you a practical team that can turn requirement debates into role-based architecture, implementation, verification, timing, and backend decisions.
+
+## At A Glance
+
+- 9 reusable role templates
+- OpenClaw config template included
+- local installer included
+- safe-to-publish structure with secrets removed
+- designed for real chip collaboration, not only orchestration screenshots
 
 ## Why This Repo Exists
 
@@ -92,6 +107,21 @@ If you want to install into another OpenClaw home:
 node scripts/install-chip-team.mjs /path/to/openclaw-home
 ```
 
+## What You Get After Install
+
+The installer generates:
+
+- `workspace-architect`
+- `workspace-chip-pm`
+- `workspace-rtl`
+- `workspace-dv`
+- `workspace-dft`
+- `workspace-pd`
+- `workspace-sta`
+- `workspace-analog`
+- `workspace-custom-layout`
+- `openclaw.chip-team.template.json`
+
 ## What You Should Customize
 
 - model provider and API keys
@@ -131,6 +161,14 @@ Do not publish these from your live OpenClaw environment:
 - verification scope definition
 - timing/signoff risk surfacing
 - backend implication review before implementation starts
+
+## Example Questions This Team Should Handle Well
+
+- Is this request still a v1.0 change, or already a new product branch?
+- Which assumptions block RTL from starting implementation?
+- What exactly must DV prove before we call the scope verifiable?
+- Is this a local timing fix, or an MMMC/signoff-model change?
+- Can PM lock the product boundary now, or is an architect gate still required?
 
 ## Non-Goals
 
