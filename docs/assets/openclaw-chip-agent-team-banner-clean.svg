@@ -17,13 +17,6 @@
 
   <rect x="96" y="118" width="1088" height="408" rx="30" fill="#091726" opacity="0.9" stroke="#27445F"/>
 
-  <g opacity="0.4">
-    <path d="M486 196H900" stroke="#234560" stroke-width="2" stroke-linecap="round"/>
-    <path d="M486 232H820" stroke="#234560" stroke-width="2" stroke-linecap="round"/>
-    <path d="M486 268H860" stroke="#234560" stroke-width="2" stroke-linecap="round"/>
-    <path d="M486 304H792" stroke="#234560" stroke-width="2" stroke-linecap="round"/>
-  </g>
-
   <g transform="translate(146 174)">
     <rect x="0" y="0" width="284" height="284" rx="46" fill="url(#chip)"/>
     <rect x="52" y="52" width="180" height="180" rx="30" fill="#C9FFF9" opacity="0.13" stroke="#B7FFF9" stroke-width="2"/>
@@ -56,11 +49,6 @@
     <tspan x="486" dy="0">角色化架构评审、实现判断、验证闭环与签核协作</tspan>
     <tspan x="486" dy="34">Architect / PM / RTL / DV / STA / PD / DFT / Analog / Layout</tspan>
   </text>
-
-  <g transform="translate(486 314)">
-    <line x1="0" y1="0" x2="246" y2="0" stroke="#28506C" stroke-width="3" stroke-linecap="round"/>
-    <line x1="0" y1="72" x2="278" y2="72" stroke="#28506C" stroke-width="3" stroke-linecap="round"/>
-  </g>
 
   <g transform="translate(486 432)">
     <rect x="0" y="0" width="170" height="44" rx="22" fill="#14354A" stroke="#316784"/>
