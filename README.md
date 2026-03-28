@@ -136,6 +136,30 @@ If you want to install into another OpenClaw home:
 node scripts/install-chip-team.mjs /path/to/openclaw-home
 ```
 
+## One-Line Install
+
+If you just want to install the team into your local OpenClaw home:
+
+```bash
+bash -c "$(curl -fsSL https://raw.githubusercontent.com/kichy-ge/openclaw-chip-agent-team/main/scripts/install-from-github.sh)"
+```
+
+If you want to install into a custom OpenClaw home:
+
+```bash
+bash -c "$(curl -fsSL https://raw.githubusercontent.com/kichy-ge/openclaw-chip-agent-team/main/scripts/install-from-github.sh)" -- /path/to/openclaw-home
+```
+
+## Install From Inside OpenClaw
+
+You can also paste this directly into an OpenClaw chat:
+
+> Please install the GitHub repo `kichy-ge/openclaw-chip-agent-team` into my local OpenClaw environment, run its installer, and generate the config template under `~/.openclaw/`.
+
+Chinese version:
+
+> 请把 GitHub 仓库 `kichy-ge/openclaw-chip-agent-team` 安装到我本地的 OpenClaw 环境里，执行安装脚本，并在 `~/.openclaw/` 下生成配置模板。
+
 ## What You Get After Install
 
 The installer generates:
