@@ -53,25 +53,57 @@ The goal is not to ship a fake demo. The goal is to give you a practical team th
 
 ```mermaid
 flowchart LR
-    U["Product / Chip Question"] --> PM["Chip PM"]
-    U --> ARC["Architect"]
+    classDef input fill:#0e2236,stroke:#4aa3ff,color:#eef7ff,stroke-width:1.5px;
+    classDef core fill:#15354f,stroke:#79d2ff,color:#f5fbff,stroke-width:1.5px;
+    classDef specialist fill:#1e243d,stroke:#8c93ff,color:#f7f7ff,stroke-width:1.2px;
+    classDef output fill:#173b32,stroke:#63d2a1,color:#f3fff8,stroke-width:1.5px;
+
+    U["Product / Chip Question"]
+    SUM["Role-Based Decision Output"]
+
+    subgraph CORE["Core Decision Layer"]
+        direction LR
+        PM["Chip PM"]
+        ARC["Architect"]
+    end
+
+    subgraph SPEC["Specialist Review Mesh"]
+        direction TB
+        RTL["RTL"]
+        DV["DV"]
+        DFT["DFT"]
+        STA["STA"]
+        PD["PD"]
+        ANA["Analog"]
+        CL["Custom Layout"]
+    end
+
+    U --> PM
+    U --> ARC
     PM --> ARC
-    ARC --> RTL["RTL"]
-    ARC --> DV["DV"]
-    ARC --> STA["STA"]
-    ARC --> PD["PD"]
-    ARC --> DFT["DFT"]
-    ARC --> ANA["Analog"]
-    ARC --> CL["Custom Layout"]
-    RTL --> SUM["Role-Based Decision Output"]
-    DV --> SUM
-    STA --> SUM
-    PD --> SUM
-    DFT --> SUM
-    ANA --> SUM
-    CL --> SUM
+
+    ARC --> RTL
+    ARC --> DV
+    ARC --> DFT
+    ARC --> STA
+    ARC --> PD
+    ARC --> ANA
+    ARC --> CL
+
     PM --> SUM
     ARC --> SUM
+    RTL --> SUM
+    DV --> SUM
+    DFT --> SUM
+    STA --> SUM
+    PD --> SUM
+    ANA --> SUM
+    CL --> SUM
+
+    class U input;
+    class PM,ARC core;
+    class RTL,DV,DFT,STA,PD,ANA,CL specialist;
+    class SUM output;
 ```
 
 This team is designed to turn one incoming chip question into role-separated outputs instead of one blended answer. PM frames scope, Architect judges partition and ownership, and specialists challenge feasibility from implementation, verification, timing, backend, test, analog, and layout angles.

@@ -56,25 +56,57 @@
 
 ```mermaid
 flowchart LR
-    U["产品 / 芯片问题"] --> PM["Chip PM"]
-    U --> ARC["Architect"]
+    classDef input fill:#0e2236,stroke:#4aa3ff,color:#eef7ff,stroke-width:1.5px;
+    classDef core fill:#15354f,stroke:#79d2ff,color:#f5fbff,stroke-width:1.5px;
+    classDef specialist fill:#1e243d,stroke:#8c93ff,color:#f7f7ff,stroke-width:1.2px;
+    classDef output fill:#173b32,stroke:#63d2a1,color:#f3fff8,stroke-width:1.5px;
+
+    U["产品 / 芯片问题"]
+    SUM["角色化决策输出"]
+
+    subgraph CORE["核心判断层"]
+        direction LR
+        PM["Chip PM"]
+        ARC["Architect"]
+    end
+
+    subgraph SPEC["Specialist 协作层"]
+        direction TB
+        RTL["RTL"]
+        DV["DV"]
+        DFT["DFT"]
+        STA["STA"]
+        PD["PD"]
+        ANA["Analog"]
+        CL["Custom Layout"]
+    end
+
+    U --> PM
+    U --> ARC
     PM --> ARC
-    ARC --> RTL["RTL"]
-    ARC --> DV["DV"]
-    ARC --> STA["STA"]
-    ARC --> PD["PD"]
-    ARC --> DFT["DFT"]
-    ARC --> ANA["Analog"]
-    ARC --> CL["Custom Layout"]
-    RTL --> SUM["角色化决策输出"]
-    DV --> SUM
-    STA --> SUM
-    PD --> SUM
-    DFT --> SUM
-    ANA --> SUM
-    CL --> SUM
+
+    ARC --> RTL
+    ARC --> DV
+    ARC --> DFT
+    ARC --> STA
+    ARC --> PD
+    ARC --> ANA
+    ARC --> CL
+
     PM --> SUM
     ARC --> SUM
+    RTL --> SUM
+    DV --> SUM
+    DFT --> SUM
+    STA --> SUM
+    PD --> SUM
+    ANA --> SUM
+    CL --> SUM
+
+    class U input;
+    class PM,ARC core;
+    class RTL,DV,DFT,STA,PD,ANA,CL specialist;
+    class SUM output;
 ```
 
 这套团队的目标，是把一个芯片问题拆成多个角色视角，而不是只吐出一段混合回答。PM 负责范围和验收边界，Architect 负责分区和 owner 判断，其他 specialist 从实现、验证、时序、后端、可测性、模拟和版图角度一起约束结论。
