@@ -143,17 +143,6 @@ The most important thing to customize is each role’s `USER.md`. Recommended fi
 - what is explicitly out of scope
 - preferred output language and style
 
-## What Not To Publish
-
-Do not publish these from your live OpenClaw environment:
-
-- `~/.openclaw/openclaw.json` with real keys
-- `~/.openclaw/agents/*/sessions/`
-- `~/.openclaw/logs/`
-- `MEMORY.md`
-- `memory/YYYY-MM-DD.md`
-- personal notes, customer data, screenshots, audio files, or project transcripts
-
 ## Recommended Use Cases
 
 - requirement boundary review
@@ -183,26 +172,6 @@ This repository does not include:
 - a replacement for a real design flow
 
 It is a team template, not a full EDA platform.
-
-## Publish Checklist
-
-Before you push your own fork publicly, make sure:
-
-- all API keys are replaced with placeholders
-- all session transcripts are removed
-- all `USER.md` files are project-safe
-- all private attachments are removed
-- any screenshots are intentionally selected
-
-## Suggested GitHub Positioning
-
-Suggested repo subtitle:
-
-> A reusable OpenClaw agent squad for chip architecture, RTL, DV, STA, PD, DFT, analog, and layout collaboration.
-
-Suggested tagline:
-
-> Turn chip requirement debates into role-based architecture and implementation decisions.
 
 ## Contributing
 

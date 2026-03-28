@@ -136,17 +136,6 @@ node scripts/install-chip-team.mjs /path/to/openclaw-home
 - 明确哪些内容超出 scope
 - 输出语言和表达风格偏好
 
-## 不应该公开的内容
-
-请不要把你真实 OpenClaw 环境中的这些内容直接开源：
-
-- 带真实 key 的 `~/.openclaw/openclaw.json`
-- `~/.openclaw/agents/*/sessions/`
-- `~/.openclaw/logs/`
-- `MEMORY.md`
-- `memory/YYYY-MM-DD.md`
-- 个人笔记、客户数据、截图、音频、项目聊天记录
-
 ## 推荐使用场景
 
 - 需求边界评审
@@ -177,26 +166,6 @@ node scripts/install-chip-team.mjs /path/to/openclaw-home
 
 它是一个团队模板仓库，不是完整的芯片设计平台。
 
-## 发布前检查清单
-
-在你把自己的版本公开出去前，请确认：
-
-- 所有 API key 都替换成占位符
-- 所有会话记录都清掉了
-- 所有 `USER.md` 都适合公开
-- 所有私人附件都去掉了
-- 如果放截图，都是你刻意挑选的公开素材
-
-## 推荐的 GitHub 定位
-
-推荐副标题：
-
-> A reusable OpenClaw agent squad for chip architecture, RTL, DV, STA, PD, DFT, analog, and layout collaboration.
-
-推荐一句话介绍：
-
-> 把芯片需求讨论推进成角色化的架构判断和实现决策。
-
 ## 贡献
 
 参见 `CONTRIBUTING.md` 或 `CONTRIBUTING.zh-CN.md`。
@@ -204,4 +173,3 @@ node scripts/install-chip-team.mjs /path/to/openclaw-home
 ## 许可证
 
 MIT
-
