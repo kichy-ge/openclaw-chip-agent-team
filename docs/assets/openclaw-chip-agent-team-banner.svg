@@ -16,7 +16,6 @@
   <circle cx="158" cy="560" r="210" fill="#0E8A8D" opacity="0.12"/>
 
   <rect x="96" y="118" width="1088" height="408" rx="30" fill="#091726" opacity="0.9" stroke="#27445F"/>
-  <rect x="112" y="410" width="1056" height="96" rx="22" fill="#0D2032" opacity="0.92" stroke="#244560"/>
 
   <g opacity="0.4">
     <path d="M486 196H900" stroke="#234560" stroke-width="2" stroke-linecap="round"/>
@@ -63,7 +62,7 @@
     <line x1="0" y1="72" x2="278" y2="72" stroke="#28506C" stroke-width="3" stroke-linecap="round"/>
   </g>
 
-  <g transform="translate(486 430)">
+  <g transform="translate(486 432)">
     <rect x="0" y="0" width="170" height="44" rx="22" fill="#14354A" stroke="#316784"/>
     <text x="26" y="29" fill="#F2FAFF" font-size="19" font-weight="600" font-family="Arial, PingFang SC, sans-serif">Architect-led</text>
 
@@ -73,24 +72,4 @@
     <rect x="360" y="0" width="206" height="44" rx="22" fill="#2A2E48" stroke="#6970B7"/>
     <text x="389" y="29" fill="#F2FAFF" font-size="19" font-weight="600" font-family="Arial, PingFang SC, sans-serif">Reusable templates</text>
   </g>
-
-  <text x="140" y="452" fill="#F4FAFF" font-size="24" font-weight="700" font-family="Arial, PingFang SC, sans-serif">Role Mesh</text>
-  <text x="140" y="482" fill="#AFC7DA" font-size="16" font-weight="500" font-family="Arial, PingFang SC, sans-serif">
-    PM 定义边界，Architect 做 gate，specialist 约束实现与 signoff。
-  </text>
-
-  <circle cx="418" cy="446" r="10" fill="#88E9FF"/>
-  <text x="438" y="452" fill="#F2FAFF" font-size="17" font-weight="600" font-family="Arial, PingFang SC, sans-serif">Chip PM</text>
-
-  <circle cx="548" cy="446" r="10" fill="#69D3AE"/>
-  <text x="568" y="452" fill="#F2FAFF" font-size="17" font-weight="600" font-family="Arial, PingFang SC, sans-serif">Architect</text>
-
-  <circle cx="702" cy="446" r="10" fill="#F7BE6A"/>
-  <text x="722" y="452" fill="#F2FAFF" font-size="17" font-weight="600" font-family="Arial, PingFang SC, sans-serif">RTL / DV / DFT</text>
-
-  <circle cx="418" cy="486" r="10" fill="#C890FF"/>
-  <text x="438" y="492" fill="#F2FAFF" font-size="17" font-weight="600" font-family="Arial, PingFang SC, sans-serif">PD / STA</text>
-
-  <circle cx="548" cy="486" r="10" fill="#FF93A8"/>
-  <text x="568" y="492" fill="#F2FAFF" font-size="17" font-weight="600" font-family="Arial, PingFang SC, sans-serif">Analog / Layout</text>
 </svg>
