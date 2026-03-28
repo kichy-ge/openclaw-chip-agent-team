@@ -113,17 +113,26 @@ flowchart LR
 
 ## 角色矩阵
 
-| 角色 | 关注点 | 常见输出 |
-|---|---|---|
-| Architect | 分区、接口、gate 决策 | 架构结论、风险拆分、下一步 owner |
-| Chip PM | 需求基线、版本边界 | 范围判断、must/should/later、验收口径 |
-| RTL | 微架构、协议、数据通路 | 实现判断、接口假设 |
-| DV | 证明目标、覆盖率、closure | 验证 gate、缺失证据 |
-| DFT | 可测性与量产可制造性 | scan/ATPG/MBIST 影响 |
-| PD | 后端可实现性与 QoR 收敛 | floorplan/CTS/route 建议 |
-| STA | 时序完整性与修复 owner | 时序判断、signoff 风险 |
-| Analog | 模拟意图与表征 | PVT/噪声/精度风险 |
-| Custom Layout | 匹配、寄生、抽取准备 | DRC/LVS/PEX 导向建议 |
+### 核心判断层
+
+- **Architect**：负责分区、接口和 gate 决策。输出：架构结论、风险拆分、下一步 owner。
+- **Chip PM**：负责需求基线和版本边界。输出：范围判断、must/should/later、验收口径。
+
+### 前端交付层
+
+- **RTL**：负责微架构、协议和数据通路。输出：实现判断、接口假设。
+- **DV**：负责证明目标、覆盖率和 closure。输出：验证 gate、缺失证据。
+- **DFT**：负责可测性与量产可制造性。输出：scan、ATPG、MBIST 影响。
+
+### 签核与后端层
+
+- **STA**：负责时序完整性与修复 owner。输出：时序判断、signoff 风险。
+- **PD**：负责后端可实现性与 QoR 收敛。输出：floorplan、CTS、route 建议。
+
+### 模拟与定制层
+
+- **Analog**：负责模拟意图与表征。输出：PVT、噪声、精度风险。
+- **Custom Layout**：负责匹配、寄生和抽取准备。输出：DRC、LVS、PEX 导向建议。
 
 ## 仓库里包含什么
 

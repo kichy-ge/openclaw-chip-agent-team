@@ -121,17 +121,26 @@ This template tries to make those role boundaries real.
 
 ## Team Roles
 
-| Role | Focus | Typical Output |
-|---|---|---|
-| Architect | partition, interface, gate decision | architecture judgement, risk split, next owner |
-| Chip PM | requirement baseline, version scope | scope decision, must/should/later, acceptance |
-| RTL | micro-architecture, protocol, datapath | implementation verdict, interface assumptions |
-| DV | proof obligation, coverage, closure | verification gate, missing evidence |
-| DFT | testability and manufacturability | scan/ATPG/MBIST implications |
-| PD | backend feasibility and QoR closure | floorplan/CTS/route recommendations |
-| STA | timing integrity and fix ownership | timing verdict, signoff risk |
-| Analog | analog intent and characterization | PVT/noise/performance risks |
-| Custom Layout | matching, parasitics, extraction readiness | DRC/LVS/PEX-oriented guidance |
+### Core
+
+- **Architect**: partition, interface, gate decision. Output: architecture judgement, risk split, next owner.
+- **Chip PM**: requirement baseline, version scope. Output: scope decision, must/should/later, acceptance.
+
+### Frontend Delivery
+
+- **RTL**: micro-architecture, protocol, datapath. Output: implementation verdict, interface assumptions.
+- **DV**: proof obligation, coverage, closure. Output: verification gate, missing evidence.
+- **DFT**: testability and manufacturability. Output: scan, ATPG, and MBIST implications.
+
+### Signoff and Backend
+
+- **STA**: timing integrity and fix ownership. Output: timing verdict, signoff risk.
+- **PD**: backend feasibility and QoR closure. Output: floorplan, CTS, and route recommendations.
+
+### Analog and Custom
+
+- **Analog**: analog intent and characterization. Output: PVT, noise, and performance risks.
+- **Custom Layout**: matching, parasitics, extraction readiness. Output: DRC, LVS, and PEX-oriented guidance.
 
 ## What Is Included
 
