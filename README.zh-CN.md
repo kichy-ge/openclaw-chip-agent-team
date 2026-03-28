@@ -36,6 +36,33 @@
 
 这个模板仓库就是为了把这些边界做实。
 
+## 团队总览图
+
+```mermaid
+flowchart LR
+    U["产品 / 芯片问题"] --> PM["Chip PM"]
+    U --> ARC["Architect"]
+    PM --> ARC
+    ARC --> RTL["RTL"]
+    ARC --> DV["DV"]
+    ARC --> STA["STA"]
+    ARC --> PD["PD"]
+    ARC --> DFT["DFT"]
+    ARC --> ANA["Analog"]
+    ARC --> CL["Custom Layout"]
+    RTL --> SUM["角色化决策输出"]
+    DV --> SUM
+    STA --> SUM
+    PD --> SUM
+    DFT --> SUM
+    ANA --> SUM
+    CL --> SUM
+    PM --> SUM
+    ARC --> SUM
+```
+
+这套团队的目标，是把一个芯片问题拆成多个角色视角，而不是只吐出一段混合回答。PM 负责范围和验收边界，Architect 负责分区和 owner 判断，其他 specialist 从实现、验证、时序、后端、可测性、模拟和版图角度一起约束结论。
+
 ## 角色矩阵
 
 | 角色 | 关注点 | 常见输出 |
@@ -153,6 +180,10 @@ node scripts/install-chip-team.mjs /path/to/openclaw-home
 - DV 到底需要证明什么，才能说这个范围可验证？
 - 这是局部 timing fix，还是 MMMC/signoff model 级变化？
 - PM 现在能锁产品边界了吗，还是还需要 Architect gate？
+
+## 首发文案
+
+中英双语首发帖 / 社媒发布文案见 `docs/launch/launch-copy.md`。
 
 ## 非目标
 

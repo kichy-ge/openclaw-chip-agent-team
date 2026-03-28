@@ -33,6 +33,33 @@ The goal is not to ship a fake demo. The goal is to give you a practical team th
 - safe-to-publish structure with secrets removed
 - designed for real chip collaboration, not only orchestration screenshots
 
+## Team Overview
+
+```mermaid
+flowchart LR
+    U["Product / Chip Question"] --> PM["Chip PM"]
+    U --> ARC["Architect"]
+    PM --> ARC
+    ARC --> RTL["RTL"]
+    ARC --> DV["DV"]
+    ARC --> STA["STA"]
+    ARC --> PD["PD"]
+    ARC --> DFT["DFT"]
+    ARC --> ANA["Analog"]
+    ARC --> CL["Custom Layout"]
+    RTL --> SUM["Role-Based Decision Output"]
+    DV --> SUM
+    STA --> SUM
+    PD --> SUM
+    DFT --> SUM
+    ANA --> SUM
+    CL --> SUM
+    PM --> SUM
+    ARC --> SUM
+```
+
+This team is designed to turn one incoming chip question into role-separated outputs instead of one blended answer. PM frames scope, Architect judges partition and ownership, and specialists challenge feasibility from implementation, verification, timing, backend, test, analog, and layout angles.
+
 ## Why This Repo Exists
 
 Most “multi-agent” demos stop at pretty orchestration. Real chip work is different:
@@ -160,6 +187,10 @@ The most important thing to customize is each role’s `USER.md`. Recommended fi
 - What exactly must DV prove before we call the scope verifiable?
 - Is this a local timing fix, or an MMMC/signoff-model change?
 - Can PM lock the product boundary now, or is an architect gate still required?
+
+## Launch Copy
+
+See `docs/launch/launch-copy.md` for bilingual GitHub launch copy and social post drafts.
 
 ## Non-Goals
 
