@@ -2,7 +2,23 @@
 
 [English](README.md) | [简体中文](README.zh-CN.md)
 
+![OpenClaw Chip Agent Team Banner](docs/assets/openclaw-chip-agent-team-banner.svg)
+
 Open-source role templates for building a serious chip and SoC multi-agent team in OpenClaw.
+
+> A reusable OpenClaw agent squad for chip architecture, RTL, DV, STA, PD, DFT, analog, and layout collaboration.
+
+## Start Here
+
+- One-line install: `bash -c "$(curl -fsSL https://raw.githubusercontent.com/kichy-ge/openclaw-chip-agent-team/main/scripts/install-from-github.sh)"`
+- OpenClaw chat install: paste one sentence and let the agent do the setup
+- Full guide: see `INSTALL.md` / `INSTALL.zh-CN.md`
+
+### OpenClaw One-Sentence Install
+
+```text
+Please install the GitHub repo `kichy-ge/openclaw-chip-agent-team` into my local OpenClaw environment, run its installer, and generate the config template under `~/.openclaw/`.
+```
 
 Best for teams who want:
 
@@ -159,6 +175,8 @@ You can also paste this directly into an OpenClaw chat:
 Chinese version:
 
 > 请把 GitHub 仓库 `kichy-ge/openclaw-chip-agent-team` 安装到我本地的 OpenClaw 环境里，执行安装脚本，并在 `~/.openclaw/` 下生成配置模板。
+
+For all three installation paths, see `INSTALL.md` and `INSTALL.zh-CN.md`.
 
 ## What You Get After Install
 

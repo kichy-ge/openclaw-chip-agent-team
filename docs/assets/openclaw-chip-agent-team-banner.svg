@@ -1,0 +1,142 @@
+<svg width="1280" height="640" viewBox="0 0 1280 640" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bg" x1="94" y1="62" x2="1176" y2="604" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#09111E"/>
+      <stop offset="0.58" stop-color="#10243B"/>
+      <stop offset="1" stop-color="#18324D"/>
+    </linearGradient>
+    <linearGradient id="panel" x1="822" y1="118" x2="1128" y2="484" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#0E2238"/>
+      <stop offset="1" stop-color="#132D47"/>
+    </linearGradient>
+    <linearGradient id="chip" x1="164" y1="178" x2="454" y2="472" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#17C9B2"/>
+      <stop offset="1" stop-color="#0C8F93"/>
+    </linearGradient>
+    <linearGradient id="accent" x1="0" y1="0" x2="1" y2="1">
+      <stop stop-color="#7DEBFF"/>
+      <stop offset="1" stop-color="#3CC3FF"/>
+    </linearGradient>
+    <filter id="shadow" x="110" y="120" width="1040" height="390" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+      <feFlood flood-opacity="0" result="BackgroundImageFix"/>
+      <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
+      <feOffset dy="18"/>
+      <feGaussianBlur stdDeviation="22"/>
+      <feColorMatrix type="matrix" values="0 0 0 0 0.0117647 0 0 0 0 0.054902 0 0 0 0 0.117647 0 0 0 0.38 0"/>
+      <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_1_2"/>
+      <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_1_2" result="shape"/>
+    </filter>
+    <style>
+      .title {
+        font-family: "SF Pro Display", "PingFang SC", "Segoe UI", sans-serif;
+        font-size: 68px;
+        font-weight: 700;
+        letter-spacing: -0.03em;
+        fill: #F6FBFF;
+      }
+      .subtitle {
+        font-family: "SF Pro Text", "PingFang SC", "Segoe UI", sans-serif;
+        font-size: 24px;
+        font-weight: 500;
+        fill: #C2D3E6;
+      }
+      .eyebrow {
+        font-family: "SF Pro Text", "PingFang SC", "Segoe UI", sans-serif;
+        font-size: 18px;
+        font-weight: 700;
+        letter-spacing: 0.18em;
+        text-transform: uppercase;
+        fill: #7DEBFF;
+      }
+      .pill {
+        font-family: "SF Pro Text", "PingFang SC", "Segoe UI", sans-serif;
+        font-size: 18px;
+        font-weight: 600;
+        fill: #E7F4FF;
+      }
+      .panelTitle {
+        font-family: "SF Pro Text", "PingFang SC", "Segoe UI", sans-serif;
+        font-size: 22px;
+        font-weight: 700;
+        fill: #F4FAFF;
+      }
+      .panelCopy {
+        font-family: "SF Pro Text", "PingFang SC", "Segoe UI", sans-serif;
+        font-size: 17px;
+        font-weight: 500;
+        fill: #AEC3D9;
+      }
+      .role {
+        font-family: "SF Pro Text", "PingFang SC", "Segoe UI", sans-serif;
+        font-size: 16px;
+        font-weight: 600;
+        fill: #E8F7FF;
+      }
+    </style>
+  </defs>
+
+  <rect width="1280" height="640" rx="32" fill="url(#bg)"/>
+  <circle cx="1124" cy="112" r="180" fill="#1A4362" fill-opacity="0.18"/>
+  <circle cx="176" cy="564" r="220" fill="#0F8A92" fill-opacity="0.14"/>
+  <path d="M0 508C177 430 296 414 432 446C551 474 633 546 749 554C888 563 1015 477 1280 390V640H0V508Z" fill="#08101A" fill-opacity="0.34"/>
+
+  <g filter="url(#shadow)">
+    <rect x="122" y="138" width="1036" height="340" rx="28" fill="#0B1625" fill-opacity="0.68" stroke="#21415F" stroke-width="1.5"/>
+  </g>
+
+  <g opacity="0.84">
+    <path d="M562 206H742" stroke="#21415F" stroke-width="1.5" stroke-linecap="round"/>
+    <path d="M562 258H758" stroke="#21415F" stroke-width="1.5" stroke-linecap="round"/>
+    <path d="M562 310H738" stroke="#21415F" stroke-width="1.5" stroke-linecap="round"/>
+    <path d="M562 362H748" stroke="#21415F" stroke-width="1.5" stroke-linecap="round"/>
+  </g>
+
+  <g transform="translate(160 170)">
+    <rect x="0" y="0" width="250" height="250" rx="40" fill="url(#chip)"/>
+    <rect x="43" y="43" width="164" height="164" rx="28" fill="#E7FBFF" fill-opacity="0.16" stroke="#B9FFFC" stroke-width="2"/>
+    <rect x="83" y="83" width="84" height="84" rx="16" fill="#08141E"/>
+    <circle cx="125" cy="125" r="22" fill="url(#accent)"/>
+    <path d="M42 84H0" stroke="#6CFFF3" stroke-width="10" stroke-linecap="round"/>
+    <path d="M42 125H0" stroke="#6CFFF3" stroke-width="10" stroke-linecap="round"/>
+    <path d="M42 166H0" stroke="#6CFFF3" stroke-width="10" stroke-linecap="round"/>
+    <path d="M250 84H208" stroke="#6CFFF3" stroke-width="10" stroke-linecap="round"/>
+    <path d="M250 125H208" stroke="#6CFFF3" stroke-width="10" stroke-linecap="round"/>
+    <path d="M250 166H208" stroke="#6CFFF3" stroke-width="10" stroke-linecap="round"/>
+    <path d="M84 42V0" stroke="#6CFFF3" stroke-width="10" stroke-linecap="round"/>
+    <path d="M125 42V0" stroke="#6CFFF3" stroke-width="10" stroke-linecap="round"/>
+    <path d="M166 42V0" stroke="#6CFFF3" stroke-width="10" stroke-linecap="round"/>
+    <path d="M84 250V208" stroke="#6CFFF3" stroke-width="10" stroke-linecap="round"/>
+    <path d="M125 250V208" stroke="#6CFFF3" stroke-width="10" stroke-linecap="round"/>
+    <path d="M166 250V208" stroke="#6CFFF3" stroke-width="10" stroke-linecap="round"/>
+  </g>
+
+  <text x="486" y="208" class="eyebrow">OPENCLAW MULTI-AGENT CHIP WORKSPACE</text>
+  <text x="486" y="286" class="title">OpenClaw Chip Agent Team</text>
+  <text x="486" y="336" class="subtitle">把芯片需求讨论推进成角色化的架构判断和实现协作</text>
+
+  <g transform="translate(486 382)">
+    <rect x="0" y="0" width="168" height="42" rx="21" fill="#14314A" stroke="#2F628B"/>
+    <text x="26" y="27" class="pill">Architect-led</text>
+    <rect x="184" y="0" width="166" height="42" rx="21" fill="#133B3D" stroke="#1E8C81"/>
+    <text x="211" y="27" class="pill">Chinese-first</text>
+    <rect x="366" y="0" width="178" height="42" rx="21" fill="#2A273C" stroke="#6263A7"/>
+    <text x="393" y="27" class="pill">Reusable templates</text>
+  </g>
+
+  <g transform="translate(860 156)">
+    <rect x="0" y="0" width="248" height="304" rx="24" fill="url(#panel)" stroke="#264C72"/>
+    <text x="28" y="42" class="panelTitle">Role Mesh</text>
+    <text x="28" y="72" class="panelCopy">PM frames scope, Architect gates, specialists challenge feasibility.</text>
+
+    <circle cx="52" cy="118" r="10" fill="#7DEBFF"/>
+    <text x="76" y="123" class="role">Chip PM</text>
+    <circle cx="52" cy="154" r="10" fill="#35D0A9"/>
+    <text x="76" y="159" class="role">Architect</text>
+    <circle cx="52" cy="190" r="10" fill="#FFB45F"/>
+    <text x="76" y="195" class="role">RTL / DV / DFT</text>
+    <circle cx="52" cy="226" r="10" fill="#C98CFF"/>
+    <text x="76" y="231" class="role">PD / STA</text>
+    <circle cx="52" cy="262" r="10" fill="#FF8DA1"/>
+    <text x="76" y="267" class="role">Analog / Layout</text>
+  </g>
+</svg>

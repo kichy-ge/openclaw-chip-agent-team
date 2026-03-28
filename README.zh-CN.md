@@ -2,7 +2,23 @@
 
 [English](README.md) | [简体中文](README.zh-CN.md)
 
+![OpenClaw Chip Agent Team Banner](docs/assets/openclaw-chip-agent-team-banner.svg)
+
 这是一个面向 OpenClaw 的开源芯片 / SoC 多智能体团队模板仓库。
+
+> 一套可复用的 OpenClaw 芯片角色团队模板，用来把需求讨论推进成架构判断、实现协作和角色化决策。
+
+## 从这里开始
+
+- 一句话 shell 安装：`bash -c "$(curl -fsSL https://raw.githubusercontent.com/kichy-ge/openclaw-chip-agent-team/main/scripts/install-from-github.sh)"`
+- 在 OpenClaw 对话里直接发一句安装口令
+- 完整安装说明：见 `INSTALL.zh-CN.md`
+
+### OpenClaw 一句话安装口令
+
+```text
+请把 GitHub 仓库 `kichy-ge/openclaw-chip-agent-team` 安装到我本地的 OpenClaw 环境里，执行安装脚本，并在 `~/.openclaw/` 下生成配置模板。
+```
 
 它适合这样的团队：
 
@@ -152,6 +168,8 @@ bash -c "$(curl -fsSL https://raw.githubusercontent.com/kichy-ge/openclaw-chip-a
 英文版：
 
 > Please install the GitHub repo `kichy-ge/openclaw-chip-agent-team` into my local OpenClaw environment, run its installer, and generate the config template under `~/.openclaw/`.
+
+三种安装方式的完整说明见 `INSTALL.zh-CN.md`，英文版见 `INSTALL.md`。
 
 ## 安装后会得到什么
 
