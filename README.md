@@ -1,5 +1,7 @@
 # OpenClaw Chip Agent Team
 
+[English](README.md) | [简体中文](README.zh-CN.md)
+
 Open-source role templates for building a serious chip and SoC multi-agent team in OpenClaw.
 
 Best for teams who want:
@@ -204,7 +206,7 @@ Suggested tagline:
 
 ## Contributing
 
-See `CONTRIBUTING.md`.
+See `CONTRIBUTING.md` or `CONTRIBUTING.zh-CN.md`.
 
 ## License
 
