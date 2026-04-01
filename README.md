@@ -275,6 +275,11 @@ The most important thing to customize is each role’s `USER.md`. Recommended fi
 
 See `docs/launch/launch-copy.md` for bilingual GitHub launch copy and social post drafts.
 
+## Contributors
+
+- **kichy_ge** (`@kichy-ge`): project direction, role design, chip collaboration framing, and OpenClaw integration.
+- **Codex**: implementation partner for documentation polish, installation flow refinement, assets, and launch materials.
+
 ## Non-Goals
 
 This repository does not include:

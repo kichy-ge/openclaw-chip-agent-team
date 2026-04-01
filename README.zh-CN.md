@@ -268,6 +268,11 @@ bash -c "$(curl -fsSL https://raw.githubusercontent.com/kichy-ge/openclaw-chip-a
 
 中英双语首发帖 / 社媒发布文案见 `docs/launch/launch-copy.md`。
 
+## 贡献者
+
+- **kichy_ge**（`@kichy-ge`）：项目方向、角色体系设计、芯片协作框架定义，以及 OpenClaw 集成落地。
+- **Codex**：文档打磨、安装流程优化、素材整理，以及首发内容协作实现。
+
 ## 非目标
 
 这个仓库不包含：
